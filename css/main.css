@@ -11,7 +11,7 @@ html {
   --violet: hsl(257, 40%, 49%);
 }
 body {
-  background: url("/images/bg-desktop.svg");
+  background: url("./images/bg-desktop.svg");
   background-color: var(--violet);
   color: #ffffff;
   margin: 0;
