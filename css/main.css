@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+body {
+  background: url("/images/bg-desktop.svg");
+  background-color: var(--violet);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.featured {
+  padding-left: 30px;
+  padding-top: 50px;
+}
+h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  line-height: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+.right {
+  display: flex;
+}
+.content {
+  align-self: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.register {
+  width: 140px;
+  height: 45px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+/* Social Media Links Code */
+.social {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin: 0 auto;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+.icon:hover {
+  opacity: 0.8;
+}
+.icon a {
+  align-self: center;
+  color: #ffffff;
+}
+/* Footer Code */
+footer {
+  display: block;
+  margin-top: 50px;
+}
+
+/* Media Query 320px and 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: url("/images/bg-mobile.svg") no-repeat;
+    background-color: var(--violet);
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo {
+    padding: 0;
+    padding-top: 35px;
+    margin: 0;
+  }
+  .logosvg {
+    width: 45%;
+    padding: 0;
+  }
+  .featured {
+    padding: 0;
+    padding-top: 40px;
+  }
+  .featured img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .right {
+    flex-direction: column;
+  }
+  .content {
+    width: 90%;
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .register {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-decoration: none;
+    width: 220px;
+  }
+  .btn {
+    text-decoration: none;
+  }
+  .social {
+    margin-top: 45px;
+    justify-content: center;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+  p.attribution {
+    padding: 0;
+  }
+}
